@@ -1,289 +1,154 @@
 const products = [
-    {
-        id:1,
-        name:"REALME 15 C",
-        brand:"Realme",
-        category:"Celular",
-        camera:"50MP",
-        cpu:" MediaTek Helio G81-Ultra",
-        ram:"8GB",
-        storage:"128GB",
-        battery:"6000 mAh",
-        charge:"33W",
-        screen:"6.9” AMOLED",
-        refresh:"120Hz",
-        description:"Pantalla AMOLED 5G",
-        image:"img/productos/REALMI15C.jpg",
-        bestSeller:true,
-        offer:false
-    },
-    {
-        id:2,
-        name:"Infinix GT 30",
-        brand:"Infinix",
-        camera:"64MP",
-        cpu:"Dimensity 7400",
-        ram:"12GB",
-        storage:"256GB",
-        battery:"5500 mAh",
-        charge:"45W",
-        screen:"6.78” AMOLED",
-        refresh:"144Hz",
-        description:"Cámara profesional",
-        image:"img/productos/INFINIXGT30.jpg",
-        bestSeller:true,
-        offer:true
-    },
-    {
-        id:3,
-        name:"Infinix Note 50s",
-        brand:"Infinix",
-        camera:"64MP",
-        cpu:"MediaTek Dimensity 7300 Ultimate",
-        ram:"8GB",
-        storage:"256GB",
-        battery:"5500 mAh",
-        charge:"45W",
-        screen:"6.78” AMOLED",
-        refresh:"144Hz",
-        description:"Cámara profesional",
-        image:"img/productos/INFINIXNOTE50S.jpg",
-        bestSeller:true,
-        offer:true
-    },
-    {
-        id:4,
-        name:"Infinix Hot 60 Pro+",
-        brand:"Infinix",
-        camera:"50MP",
-        cpu:"MediaTek Helio G200",
-        ram:"8GB",
-        storage:"256GB",
-        battery:"5160 mAh",
-        charge:"45W",
-        screen:"6.78” AMOLED",
-        refresh:"120Hz",
-        description:"Cámara profesional",
-        image:"img/productos/INFINIXHOT60PRO.jpg",
-        bestSeller:true,
-        offer:true
-    },
-    {
-        id:5,
-        name:"Infinix Smart 10",
-        brand:"Infinix",
-        camera:"8MP",
-        cpu:"Unisoc T7250 Octa-Core",
-        ram:"6GB",
-        storage:"128GB",
-        battery:"5000 mAh",
-        charge:"15W",
-        screen:"6.67” IPS LCD",
-        refresh:"120Hz",
-        description:"Cámara profesional",
-        image:"img/productos/INFINIXSMART10.jpg",
-        bestSeller:true,
-        offer:true
-    },
-    {
-        id:6,
-        name:"Honor 200",
-        brand:"Honor",
-        camera:"50MP",
-        cpu:"Qualcomm Snapdragon 7 Gen 3.",
-        ram:"8GB",
-        storage:"256GB",
-        battery:"5200 mAh",
-        charge:"100W",
-        screen:"6.7” AMOLED",
-        refresh:"120Hz",
-        description:"Cámara profesional",
-        image:"img/productos/HONOR200.jpg",
-        bestSeller:true,
-        offer:true
-    },
-    {
-        id:7,
-        name:"Honor X5c",
-        brand:"Honor",
-        camera:"50MP",
-        cpu:"MediaTek Helio G81",
-        ram:"8GB",
-        storage:"128GB",
-        battery:"5250 mAh",
-        charge:"15W",
-        screen:"6.74” AMOLED",
-        refresh:"90Hz",
-        description:"Cámara profesional",
-        image:"img/productos/HONORX5C.jpg",
-        bestSeller:true,
-        offer:true
-    },
-    {
-        id:8,
-        name:"Tecno Spark GO",
-        brand:"Tecno",
-        camera:"13MP",
-        cpu:"Unisoc T7250 Octa-Core",
-        ram:"4GB",
-        storage:"128GB",
-        battery:"5000 mAh",
-        charge:"15W",
-        screen:"6.67” AMOLED",
-        refresh:"120Hz",
-        description:"Cámara profesional",
-        image:"img/productos/TECNOSPARKGO2.jpg",
-        bestSeller:true,
-        offer:true
-    },
-    {
-        id:9,
-        name:"Samsung A26 5G",
-        brand:"Samsung",
-        camera:"50MP",
-        cpu:"Procesador de 8 núcleos (AP mejorado)",
-        ram:"8GB",
-        storage:"256GB",
-        battery:"5000 mAh",
-        charge:"25W",
-        screen:"6.7” AMOLED",
-        refresh:"120Hz",
-        description:"Cámara profesional",
-        image:"img/productos/SAMSUNGA26.jpg",
-        bestSeller:true,
-        offer:true
-    },
-    {
-        id:10,
-        name:"Samsung A 16",
-        brand:"Samsung",
-        camera:"50MP",
-        cpu:"Helio G99",
-        ram:"8GB",
-        storage:"256GB",
-        battery:"5000 mAh",
-        charge:"25W",
-        screen:"6.7” AMOLED",
-        refresh:"90Hz",
-        description:"Cámara profesional",
-        image:"img/productos/SAMSUNGA16.jpg",
-        bestSeller:true,
-        offer:true
-    },
-    {
-        id:11,
-        name:"Samsung A 06",
-        brand:"Samsung",
-        camera:"50MP",
-        cpu:"MediaTek Helio G85",
-        ram:"4GB",
-        storage:"128GB",
-        battery:"5000 mAh",
-        charge:"25W",
-        screen:"6.7” PLS LCD",
-        refresh:"90Hz",
-        description:"Cámara profesional",
-        image:"img/productos/SAMSUNGA06.jpg",
-        bestSeller:true,
-        offer:true
-    }
+  {id:1,name:'REALME 15 C',brand:'Realme',camera:'50 MP',cpu:'Helio G81-Ultra',ram:'8 GB',storage:'128 GB',battery:'6000 mAh',charge:'33 W',screen:'6.9” AMOLED',refresh:'120 Hz',image:'img/productos/REALMI15C.jpg',bestSeller:true,offer:false},
+  {id:2,name:'Infinix GT 30',brand:'Infinix',camera:'64 MP',cpu:'Dimensity 7400',ram:'12 GB',storage:'256 GB',battery:'5500 mAh',charge:'45 W',screen:'6.78” AMOLED',refresh:'144 Hz',image:'img/productos/INFINIXGT30.jpg',bestSeller:true,offer:true},
+  {id:3,name:'Infinix Note 50s',brand:'Infinix',camera:'64 MP',cpu:'Dimensity 7300 Ultimate',ram:'8 GB',storage:'256 GB',battery:'5500 mAh',charge:'45 W',screen:'6.78” AMOLED',refresh:'144 Hz',image:'img/productos/INFINIXNOTE50S.jpg',bestSeller:true,offer:true},
+  {id:4,name:'Infinix Hot 60 Pro+',brand:'Infinix',camera:'50 MP',cpu:'Helio G200',ram:'8 GB',storage:'256 GB',battery:'5160 mAh',charge:'45 W',screen:'6.78” AMOLED',refresh:'120 Hz',image:'img/productos/INFINIXHOT60PRO.jpg',bestSeller:true,offer:true},
+  {id:5,name:'Infinix Smart 10',brand:'Infinix',camera:'8 MP',cpu:'Unisoc T7250',ram:'6 GB',storage:'128 GB',battery:'5000 mAh',charge:'15 W',screen:'6.67” IPS LCD',refresh:'120 Hz',image:'img/productos/INFINIXSMART10.jpg',bestSeller:true,offer:true},
+  {id:6,name:'HONOR 200',brand:'Honor',camera:'50 MP',cpu:'Snapdragon 7 Gen 3',ram:'8 GB',storage:'256 GB',battery:'5200 mAh',charge:'100 W',screen:'6.7” AMOLED',refresh:'120 Hz',image:'img/productos/HONOR200.jpg',bestSeller:true,offer:true},
+  {id:7,name:'HONOR X5c',brand:'Honor',camera:'50 MP',cpu:'Helio G81',ram:'8 GB',storage:'128 GB',battery:'5250 mAh',charge:'15 W',screen:'6.74” LCD',refresh:'90 Hz',image:'img/productos/HONORX5C.jpg',bestSeller:true,offer:true},
+  {id:8,name:'Tecno Spark GO',brand:'Tecno',camera:'13 MP',cpu:'Unisoc T7250',ram:'4 GB',storage:'128 GB',battery:'5000 mAh',charge:'15 W',screen:'6.67” IPS',refresh:'120 Hz',image:'img/productos/TECNOSPARKGO2.jpg',bestSeller:true,offer:true},
+  {id:9,name:'Samsung Galaxy A26 5G',brand:'Samsung',camera:'50 MP',cpu:'Exynos 1380',ram:'8 GB',storage:'256 GB',battery:'5000 mAh',charge:'25 W',screen:'6.7” Super AMOLED',refresh:'120 Hz',image:'img/productos/SAMSUNGA26.jpg',bestSeller:true,offer:true},
+  {id:10,name:'Samsung Galaxy A16',brand:'Samsung',camera:'50 MP',cpu:'Helio G99',ram:'8 GB',storage:'256 GB',battery:'5000 mAh',charge:'25 W',screen:'6.7” Super AMOLED',refresh:'90 Hz',image:'img/productos/SAMSUNGA16.jpg',bestSeller:true,offer:true},
+  {id:11,name:'Samsung Galaxy A06',brand:'Samsung',camera:'50 MP',cpu:'Helio G85',ram:'4 GB',storage:'128 GB',battery:'5000 mAh',charge:'25 W',screen:'6.7” PLS LCD',refresh:'90 Hz',image:'img/productos/SAMSUNGA06.jpg',bestSeller:true,offer:true}
 ];
 
-const catalog = document.getElementById("catalog");
-const searchInput = document.getElementById("searchInput");
-const brandFilter = document.getElementById("brandFilter");
-const minPrice = document.getElementById("minPrice");
-const maxPrice = document.getElementById("maxPrice");
-const bestSellerFilter = document.getElementById("bestSellerFilter");
-const offerFilter = document.getElementById("offerFilter");
+const technicalProducts = [
+  {name:'Samsung Galaxy A55 5G',camera:'Triple 50 MP',cpu:'Exynos 1480',battery:'5000 mAh',screen:'6.6” FHD+ Super AMOLED',tone:''},
+  {name:'Xiaomi Redmi Note 13 Pro',camera:'200 MP',cpu:'Snapdragon 7s Gen 2',battery:'5100 mAh',screen:'6.67” AMOLED',tone:'red'},
+  {name:'iPhone 14',camera:'Dual 12 MP',cpu:'Apple A15 Bionic',battery:'Hasta 20 h de video',screen:'6.1” Super Retina XDR',tone:'dark'},
+  {name:'Motorola Moto G54 5G',camera:'50 MP con OIS',cpu:'Dimensity 7020',battery:'5000 mAh',screen:'6.5” FHD+ 120 Hz',tone:''}
+];
 
+const catalog = document.getElementById('catalog');
+const emptyState = document.getElementById('emptyState');
+const searchInput = document.getElementById('searchInput');
+const brandFilter = document.getElementById('brandFilter');
+const minPrice = document.getElementById('minPrice');
+const maxPrice = document.getElementById('maxPrice');
+const bestSellerFilter = document.getElementById('bestSellerFilter');
+const offerFilter = document.getElementById('offerFilter');
+const clearFilters = document.getElementById('clearFilters');
+const compareModal = document.getElementById('comparison');
+const compareContainer = document.getElementById('compareContainer');
 let compare = [];
 
-const render = list => {
-    catalog.innerHTML = list.map(p => `
-        <article class="product">
-            <img src="${p.image}" loading="lazy" alt="${p.name}">
-            <h3>${p.name}</h3>
+// Los productos no tienen precio público cargado en el catálogo actual.
+// Ocultamos el filtro hasta que el inventario tenga precios reales para no inventar valores.
+const priceFilter = document.querySelector('.price-filter');
+if (priceFilter && !products.some(p => Number.isFinite(p.price))) priceFilter.remove();
 
-           <div class="specs">
-                <span>📸 ${p.camera}</span>
-                <span>🧠 ${p.cpu}</span>
-            </div>
+const escapeHTML = value => String(value ?? '').replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
 
-            <div class="specs">
-                <span>🔋 ${p.battery}</span>
-                <span>⚡ ${p.charge}</span>
-            </div>
+function productImage(product){
+  return `<img src="${escapeHTML(product.image)}" loading="lazy" alt="${escapeHTML(product.name)}" onerror="this.style.display='none';this.nextElementSibling.classList.remove('hidden')"><div class="product-placeholder hidden" aria-hidden="true"></div>`;
+}
 
-            <div class="specs">
-                <span>📱 ${p.screen}</span>
-                <span>🔄 ${p.refresh}</span>
-            </div>
+function render(list){
+  emptyState.classList.toggle('hidden', list.length !== 0);
+  catalog.innerHTML = list.map(product => `
+    <article class="product">
+      <div class="product-media">${productImage(product)}</div>
+      <div class="product-info">
+        <div class="product-brand">${escapeHTML(product.brand)}</div>
+        <h3>${escapeHTML(product.name)}</h3>
+        <div class="specs">
+          <div class="spec"><b>Cámara</b>${escapeHTML(product.camera)}</div>
+          <div class="spec"><b>Procesador</b>${escapeHTML(product.cpu)}</div>
+          <div class="spec"><b>Batería</b>${escapeHTML(product.battery)}</div>
+          <div class="spec"><b>Pantalla</b>${escapeHTML(product.screen)}</div>
+        </div>
+        <div class="product-footer">
+          <a class="buy" href="https://wa.me/573202147560?text=${encodeURIComponent(`Hola TecnoMax, estoy interesado en el ${product.name}. ¿Tienen disponibilidad?`)}" target="_blank" rel="noopener">WhatsApp</a>
+          <button class="compare" type="button" data-compare="${product.id}">Comparar</button>
+        </div>
+      </div>
+    </article>`).join('');
+}
 
-            <div class="actions">
-                <a class="buy" target="_blank"
-                   href="https://wa.me/573202147560?text=Hola, estoy interesado en el ${p.name}">
-                   WhatsApp
-                </a>
-                <button class="compare" onclick="addCompare(${p.id})">Comparar</button>
-            </div>
-        </article>
-    `).join("");
-};
+function applyFilters(){
+  const query = searchInput.value.trim().toLowerCase();
+  let list = products.filter(p => {
+    const searchable = `${p.name} ${p.brand} ${p.cpu} ${p.camera}`.toLowerCase();
+    if(query && !searchable.includes(query)) return false;
+    if(brandFilter.value && p.brand !== brandFilter.value) return false;
+    if(bestSellerFilter.checked && !p.bestSeller) return false;
+    if(offerFilter.checked && !p.offer) return false;
+    if(minPrice?.value && Number.isFinite(p.price) && p.price < Number(minPrice.value)) return false;
+    if(maxPrice?.value && Number.isFinite(p.price) && p.price > Number(maxPrice.value)) return false;
+    return true;
+  });
+  render(list);
+}
 
-const applyFilters = () => {
-    let list = [...products];
+function populateBrands(){
+  [...new Set(products.map(p => p.brand))].sort().forEach(brand => {
+    const option = document.createElement('option');
+    option.value = brand;
+    option.textContent = brand;
+    brandFilter.appendChild(option);
+  });
+}
 
-    if (searchInput.value)
-        list = list.filter(p => p.name.toLowerCase().includes(searchInput.value.toLowerCase()));
+function showComparison(){
+  compareContainer.innerHTML = `<div class="compare-grid">${compare.map(p => `
+    <div class="compare-item"><h3>${escapeHTML(p.name)}</h3><p><b>Cámara:</b> ${escapeHTML(p.camera)}</p><p><b>Procesador:</b> ${escapeHTML(p.cpu)}</p><p><b>RAM:</b> ${escapeHTML(p.ram)}</p><p><b>Almacenamiento:</b> ${escapeHTML(p.storage)}</p><p><b>Batería:</b> ${escapeHTML(p.battery)}</p><p><b>Pantalla:</b> ${escapeHTML(p.screen)}</p></div>`).join('')}</div>`;
+  compareModal.classList.remove('hidden');
+}
 
-    if (brandFilter.value)
-        list = list.filter(p => p.brand === brandFilter.value);
+catalog.addEventListener('click', event => {
+  const button = event.target.closest('[data-compare]');
+  if(!button) return;
+  const product = products.find(p => p.id === Number(button.dataset.compare));
+  if(!product) return;
+  if(!compare.some(p => p.id === product.id)) compare.push(product);
+  if(compare.length > 2) compare.shift();
+  if(compare.length === 2) showComparison();
+});
 
-    if (minPrice.value)
-        list = list.filter(p => p.price >= minPrice.value);
+document.getElementById('closeCompare').addEventListener('click', () => { compare=[]; compareModal.classList.add('hidden'); });
+compareModal.addEventListener('click', e => { if(e.target === compareModal) compareModal.classList.add('hidden'); });
 
-    if (maxPrice.value)
-        list = list.filter(p => p.price <= maxPrice.value);
+[searchInput, brandFilter, minPrice, maxPrice, bestSellerFilter, offerFilter].filter(Boolean).forEach(el => el.addEventListener('input', applyFilters));
+clearFilters.addEventListener('click', () => {
+  searchInput.value=''; brandFilter.value=''; bestSellerFilter.checked=false; offerFilter.checked=false;
+  if(minPrice) minPrice.value=''; if(maxPrice) maxPrice.value=''; applyFilters();
+});
 
-    if (bestSellerFilter.checked)
-        list = list.filter(p => p.bestSeller);
+document.querySelectorAll('[data-product]').forEach(button => button.addEventListener('click', () => {
+  const name = button.dataset.product;
+  window.open(`https://wa.me/573202147560?text=${encodeURIComponent(`Hola TecnoMax, quiero conocer el ${name}. ¿Me pueden compartir disponibilidad y precio?`)}`, '_blank', 'noopener');
+}));
 
-    if (offerFilter.checked)
-        list = list.filter(p => p.offer);
+function renderTechnical(){
+  document.getElementById('technicalGrid').innerHTML = technicalProducts.map(p => `
+    <article class="technical-card">
+      <div class="technical-device ${p.tone}" aria-hidden="true"></div>
+      <div class="technical-info"><h3>${escapeHTML(p.name)}</h3><p><b>Procesador:</b> ${escapeHTML(p.cpu)}</p><p><b>Cámara:</b> ${escapeHTML(p.camera)}</p><p><b>Batería:</b> ${escapeHTML(p.battery)}</p><p><b>Pantalla:</b> ${escapeHTML(p.screen)}</p></div>
+    </article>`).join('');
+}
 
-    render(list);
-};
-
-window.addCompare = id => {
-    const p = products.find(x => x.id === id);
-    if (!compare.includes(p) && compare.length < 2) compare.push(p);
-    if (compare.length === 2) showCompare();
-};
-
-const showCompare = () => {
-    document.getElementById("compareContainer").innerHTML =
-        compare.map(p => `<div><h3>${p.name}</h3><p>${p.price}</p></div>`).join("");
-    document.getElementById("comparison").classList.remove("hidden");
-};
-
-document.getElementById("closeCompare").onclick = () => {
-    compare = [];
-    document.getElementById("comparison").classList.add("hidden");
-};
-
-[...new Set(products.map(p => p.brand))].forEach(b =>
-    brandFilter.innerHTML += `<option value="${b}">${b}</option>`
-);
-
-document.querySelectorAll("input, select").forEach(e => e.oninput = applyFilters);
-render(products);
-
-const slides = document.querySelectorAll(".hero-slide");
+const slides = [...document.querySelectorAll('.hero-slide')];
+const dots = document.getElementById('heroDots');
 let currentSlide = 0;
+let slideTimer;
+slides.forEach((_, index) => {
+  const dot = document.createElement('button');
+  dot.type='button'; dot.ariaLabel=`Promoción ${index+1}`; dot.addEventListener('click',()=>goToSlide(index));
+  dots.appendChild(dot);
+});
+function goToSlide(index){
+  slides[currentSlide].classList.remove('is-active');
+  dots.children[currentSlide].classList.remove('active');
+  currentSlide=(index+slides.length)%slides.length;
+  slides[currentSlide].classList.add('is-active');
+  dots.children[currentSlide].classList.add('active');
+  restartTimer();
+}
+function restartTimer(){clearInterval(slideTimer);slideTimer=setInterval(()=>goToSlide(currentSlide+1),5000)}
+document.getElementById('heroPrev').addEventListener('click',()=>goToSlide(currentSlide-1));
+document.getElementById('heroNext').addEventListener('click',()=>goToSlide(currentSlide+1));
+goToSlide(0);
 
-setInterval(() => {
-    slides[currentSlide].classList.remove("active");
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add("active");
-}, 4000); // cambia cada 4 segundos
+populateBrands();
+renderTechnical();
+render(products);
