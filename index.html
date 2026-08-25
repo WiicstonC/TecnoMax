@@ -1,65 +1,165 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 <head>
     <meta charset="UTF-8">
-    <title>TecnoMax | Celulares de Alta Gama</title>
-
-    <meta name="description" content="Catálogo premium de celulares. Compará, filtrá por precio y comprá directo por WhatsApp.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b3558">
+    <meta name="description" content="TecnoMax SmartPhone: celulares, tablets y accesorios tecnológicos en Colombia. Consulta disponibilidad y compra por WhatsApp.">
+    <title>TecnoMax SmartPhone | Tecnología en Colombia</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
+    <div class="top-strip">TECNOLOGÍA • CELULARES • TABLETS • ACCESORIOS</div>
 
-<!-- HEADER -->
-<header class="header">
-    <img class="logo" src="img/logo.png" alt="TecnoMax">
-    <input type="search" id="searchInput" placeholder="Buscar celular...">
-</header>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="#inicio" aria-label="TecnoMax inicio">
+                <img src="img/logo.png" alt="TecnoMax SmartPhone" class="brand-logo">
+            </a>
 
-<!-- BANNER -->
-<section class="hero">
-    <div class="hero-slide active" style="background-image:url('img/banners/note50s.png')"></div>
-    <div class="hero-slide" style="background-image:url('img/banners/inifnixgt30.jpg')"></div>
-    <div class="hero-slide" style="background-image:url('img/banners/honor200.jpg')"></div>
-</section>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="#tienda">Tienda</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotros">Sobre Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
 
+            <div class="header-actions">
+                <a href="#tienda" class="account-link" aria-label="Mi cuenta">◯ <span>Mi Cuenta</span></a>
+                <label class="search-box">
+                    <span>⌕</span>
+                    <input id="searchInput" type="search" placeholder="Buscar" autocomplete="off">
+                </label>
+                <div class="socials" aria-label="Redes sociales">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">◎</a>
+                    <a href="#" aria-label="TikTok">♪</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<!-- FILTERS -->
-<section class="filters">
-    <select id="brandFilter">
-        <option value="">Marca</option>
-    </select>
+    <main id="inicio">
+        <section class="hero" aria-label="Promociones TecnoMax">
+            <div class="hero-track" id="heroTrack">
+                <article class="hero-slide is-active">
+                    <img src="img/banners/tecno-banner.svg" alt="Tecnología TecnoMax">
+                </article>
+                <article class="hero-slide">
+                    <img src="img/banners/tablets-accesorios.svg" alt="Tablets y accesorios TecnoMax">
+                </article>
+                <article class="hero-slide hero-existing">
+                    <img src="img/banners/note50s.png" alt="Promoción Infinix Note 50s" onerror="this.closest('.hero-slide').classList.add('fallback')">
+                    <div class="hero-fallback-copy"><strong>INFINIX NOTE 50S</strong><span>Potencia para todos tus días</span></div>
+                </article>
+            </div>
+            <button class="hero-control prev" type="button" aria-label="Anterior" id="heroPrev">‹</button>
+            <button class="hero-control next" type="button" aria-label="Siguiente" id="heroNext">›</button>
+            <div class="hero-dots" id="heroDots" aria-label="Seleccionar promoción"></div>
+        </section>
 
-    <div class="price-range">
-        <input type="number" id="minPrice" placeholder="Precio mín">
-        <input type="number" id="maxPrice" placeholder="Precio máx">
+        <section class="promo-strip" id="servicios">
+            <div class="promo-item"><b>🚚</b><span><strong>Envíos</strong><small>A todo Colombia</small></span></div>
+            <div class="promo-item"><b>✓</b><span><strong>Equipos originales</strong><small>Referencias reales</small></span></div>
+            <div class="promo-item"><b>💬</b><span><strong>Compra fácil</strong><small>Atención por WhatsApp</small></span></div>
+            <div class="promo-item"><b>🛡</b><span><strong>Asesoría</strong><small>Te ayudamos a elegir</small></span></div>
+        </section>
+
+        <section class="category-grid" aria-label="Categorías">
+            <article class="category-card category-honor">
+                <div class="category-title">HONOR</div>
+                <div class="mini-products">
+                    <div class="mini-product">
+                        <div class="phone-art honor-x7d"><span>HONOR</span><i></i><i></i></div>
+                        <h3>HONOR X7d</h3>
+                        <p>6500 mAh · 108 MP</p>
+                        <button type="button" data-product="HONOR X7d">Ver detalles</button>
+                    </div>
+                    <div class="mini-product">
+                        <div class="phone-art honor-magic"><span>HONOR</span><i></i><i></i></div>
+                        <h3>HONOR Magic8 Lite</h3>
+                        <p>8300 mAh · 108 MP OIS</p>
+                        <button type="button" data-product="HONOR Magic8 Lite">Ver detalles</button>
+                    </div>
+                </div>
+                <div class="category-banner-text">HONOR:<br><strong>INNOVACIÓN<br>AL ALCANCE</strong></div>
+            </article>
+
+            <article class="category-card category-tablets">
+                <div class="category-title">VARIEDAD TABLETS</div>
+                <div class="tablet-grid">
+                    <div class="device-line"><div class="tablet-art">LENOVO</div><span><b>Lenovo Tab</b><small>Gran pantalla · Wi‑Fi</small></span></div>
+                    <div class="device-line"><div class="tablet-art red">REDMI</div><span><b>Redmi Pad</b><small>Entretenimiento y estudio</small></span></div>
+                    <div class="device-line"><div class="tablet-art rose">SAMSUNG</div><span><b>Galaxy Tab</b><small>Rendimiento diario</small></span></div>
+                    <div class="device-line"><div class="tablet-art blue">GALAXY</div><span><b>Samsung Tab</b><small>Diseño y productividad</small></span></div>
+                </div>
+            </article>
+
+            <article class="category-card category-xiaomi">
+                <div class="category-title">XIAOMI</div>
+                <div class="xiaomi-main">
+                    <div class="phone-art xiaomi"><span>REDMI</span><i></i><i></i><i></i></div>
+                    <div><h3>Redmi Note 13 Pro</h3><p>200 MP · AMOLED · 5100 mAh</p></div>
+                </div>
+                <div class="wearables">
+                    <span>⌚ Xiaomi Watch</span><span>◉ Redmi Watch</span><span>◉ Robot Vacuum</span>
+                </div>
+            </article>
+
+            <article class="category-card category-accessories">
+                <div class="category-title">ACCESORIOS</div>
+                <div class="accessory-art"><span>⌁</span><span>◉</span><span>⌚</span><span>▣</span></div>
+                <h3>Accesorios Xiaomi y más</h3>
+                <p>Cargadores · Audífonos · Smartwatch · Cases</p>
+                <a href="https://wa.me/573202147560?text=Hola%20TecnoMax%2C%20quiero%20conocer%20los%20accesorios%20disponibles" target="_blank" rel="noopener">Consultar disponibilidad</a>
+            </article>
+        </section>
+
+        <section class="catalog-section" id="tienda">
+            <div class="section-heading">
+                <div><span class="eyebrow">CATÁLOGO TECNOMAX</span><h1>Celulares destacados</h1></div>
+                <p>Busca por marca o modelo y solicita disponibilidad directamente.</p>
+            </div>
+
+            <div class="filters" aria-label="Filtros del catálogo">
+                <select id="brandFilter" aria-label="Filtrar por marca"><option value="">Todas las marcas</option></select>
+                <label class="price-filter"><input type="number" id="minPrice" placeholder="Precio mín." min="0"><span>—</span><input type="number" id="maxPrice" placeholder="Precio máx." min="0"></label>
+                <label class="check-filter"><input type="checkbox" id="bestSellerFilter"> Más vendidos</label>
+                <label class="check-filter"><input type="checkbox" id="offerFilter"> Ofertas</label>
+                <button type="button" class="clear-filter" id="clearFilters">Limpiar</button>
+            </div>
+
+            <div id="catalog" class="catalog" aria-live="polite"></div>
+            <p id="emptyState" class="empty-state hidden">No encontramos equipos con esos filtros. Prueba con otra búsqueda.</p>
+        </section>
+
+        <section class="technical-section" id="nosotros">
+            <div class="section-heading centered"><span class="eyebrow">FICHAS TÉCNICAS</span><h2>Celulares más conocidos en Colombia</h2><p>Información resumida para comparar rápidamente las características principales.</p></div>
+            <div class="technical-grid" id="technicalGrid"></div>
+        </section>
+
+        <section class="trust-section">
+            <div><span class="eyebrow">TECNO MAX SMARTPHONE</span><h2>Elige tecnología que se adapte a ti.</h2><p>Comparamos características, resolvemos tus dudas y te acompañamos antes de tu compra.</p></div>
+            <a class="primary-button" href="https://wa.me/573202147560?text=Hola%20TecnoMax%2C%20necesito%20asesor%C3%ADa%20para%20comprar%20un%20celular" target="_blank" rel="noopener">Hablar con un asesor</a>
+        </section>
+    </main>
+
+    <footer id="contacto" class="site-footer">
+        <div><img src="img/logo.png" alt="TecnoMax" class="footer-logo"><p>Tecnología, celulares y accesorios.</p></div>
+        <div><h3>Enlaces</h3><a href="#tienda">Tienda</a><a href="#servicios">Servicios</a><a href="#nosotros">Sobre nosotros</a></div>
+        <div><h3>Atención</h3><a href="https://wa.me/573202147560" target="_blank" rel="noopener">WhatsApp</a><a href="#contacto">Contacto</a></div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/573202147560?text=Hola%20TecnoMax%2C%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">◔</a>
+
+    <div id="comparison" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="compareTitle">
+        <div class="modal-box"><button id="closeCompare" class="modal-close" type="button" aria-label="Cerrar">×</button><h2 id="compareTitle">Comparación</h2><div id="compareContainer"></div></div>
     </div>
 
-    <label><input type="checkbox" id="bestSellerFilter"> Más vendidos</label>
-    <label><input type="checkbox" id="offerFilter"> Ofertas</label>
-</section>
-
-<!-- CATALOG -->
-<main>
-    <section id="catalog" class="catalog"></section>
-</main>
-
-<!-- COMPARISON -->
-<section id="comparison" class="comparison hidden">
-    <div class="comparison-box">
-        <h2>Comparación</h2>
-        <div id="compareContainer"></div>
-        <button id="closeCompare">Cerrar</button>
-    </div>
-</section>
-
-<script src="js/app.js" defer></script>
+    <script src="js/app.js" defer></script>
 </body>
 </html>
-
